@@ -2,7 +2,7 @@
     "title": "Fraternidad ADN Burros Blancos A.C.",
     "color_scheme": "light",
     "accent_color": "green",
-    "base_font": "fraunces",
+    "base_font": "michroma",
     "header": {
         "title": "Agency",
         "logo": "images/logo.svg",
@@ -41,31 +41,24 @@
         "has_social": true,
         "social_links": [
             {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
+                "label": "Facebook",
+                "url": "https://facebook.com/adnburrosblancos",
                 "style": "icon",
-                "icon": "twitter",
+                "icon": "facebook",
                 "new_window": true
             },
             {
                 "label": "Instagram",
-                "url": "https://www.instagram.com/",
+                "url": "https://instagram.com/adnburrosblancos",
                 "style": "icon",
                 "icon": "instagram",
                 "new_window": true
             },
             {
-                "label": "Dribbble",
-                "url": "https://dribbble.com/",
+                "label": "Twitter",
+                "url": "https://twitter.com/adnburrosblanco",
                 "style": "icon",
-                "icon": "dribbble",
-                "new_window": true
-            },
-            {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/",
-                "style": "icon",
-                "icon": "linkedin",
+                "icon": "twitter",
                 "new_window": true
             }
         ]

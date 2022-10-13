@@ -3,7 +3,7 @@
     <div class="site-footer__inside">
       <div class="site-footer__info">
         {{ if .Site.Data.config.footer.content }}
-        <span class="site-footer__copyright">{{ $.Site.Data.config.footer.content | safeHTML }}</span>
+        <span class="site-footer__copyright">&copy; {{ $.Site.Data.config.footer.content | safeHTML }}</span>
         {{ end }}
         {{ range $action := .Site.Data.config.footer.links }}
           {{ $include_dict := dict "action" $action }}

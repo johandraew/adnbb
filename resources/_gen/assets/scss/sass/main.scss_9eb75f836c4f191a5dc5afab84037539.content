@@ -154,15 +154,15 @@ template {
   display: none; }
 
 html {
-  font-size: 112.5%;
+  font-size: 100%;
   height: 100%;
   min-height: 100%; }
   @media only screen and (max-width: 600px) {
     html {
       font-size: 100%; } }
 body {
-  background: #fff;
-  color: #2f3845;
+  background: #75003e;
+  color: #fff;
   line-height: 1.66667;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -171,8 +171,8 @@ body {
 .font-fraunces {
   font-family: "Fraunces", serif; }
 
-.font-karla {
-  font-family: "Karla", sans-serif; }
+.font-michroma {
+  font-family: "Michroma", sans-serif; }
 
 .font-system-sans {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
@@ -783,7 +783,6 @@ th {
   max-width: 780px; }
 
 .site-header {
-  border-bottom: 1px solid #e5e7eb;
   margin-bottom: 3.33333em;
   padding-bottom: 1em;
   padding-top: 1em; }
@@ -1221,8 +1220,25 @@ th {
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       max-width: 50%; } }
+.inicio-title {
+  font-size: 2em;
+  text-align: center;
+  background: linear-gradient(0deg, #000, #75003e);
+  padding-bottom: 4em;
+  overflow: hidden; }
+  @media only screen and (min-width: 768px) {
+    .inicio-title {
+      font-size: 4em;
+      padding-bottom: 2em; } }
+  .inicio-title__fraternidad {
+    font-weight: bold;
+    color: #fff; }
+  .inicio-title__burros {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff; }
+
 .site-footer {
-  border-top: 1px solid #e5e7eb;
+  background-color: #000;
   padding-bottom: 1.33333em;
   padding-top: 2.5em; }
   .site-footer a:not(.button) {
@@ -1479,3 +1495,37 @@ body.has-theme-bar #site-wrap {
   @media only screen and (max-width: 801px) {
     body.has-theme-bar #site-wrap {
       top: 60px; } }
+.marquee {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  --offset: 20vw;
+  --item-font-size: 10vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset)); }
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite; }
+
+.marquee span {
+  background-color: #000;
+  white-space: nowrap;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0 2vw; }
+  @media only screen and (min-width: 601px) {
+    .marquee span {
+      font-size: 3em; } }
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0); }
+  100% {
+    transform: translate3d(var(--move-final), 0, 0); } }
