@@ -15,5 +15,5 @@ function Marquee(selector, speed) {
       i = i + speed;
     }, 0);
   }
-  window.addEventListener('load', Marquee('.marquee', .9))
+  window.addEventListener('load', Marquee('.marquee', .7))
   
