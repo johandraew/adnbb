@@ -1222,6 +1222,7 @@ th {
       max-width: 50%; } }
 .inicio-title {
   font-size: 2em;
+  font-weight: bold;
   text-align: center;
   background: linear-gradient(0deg, #000, #75003e);
   padding-bottom: 4em;
